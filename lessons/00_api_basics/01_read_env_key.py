@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-ENV_NAME = "OPENAI_API_KEY"
+ENV_NAME = "DEEPSEEK_API_KEY"
 
 api_key = os.getenv(ENV_NAME)
 
