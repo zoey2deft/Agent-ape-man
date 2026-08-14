@@ -1,0 +1,36 @@
+# uv / Python 环境
+.venv/
+.uv-cache/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 密钥和本地配置
+.env
+.env.*
+!.env.example
+
+# 编辑器个人配置
+.vscode/
+
+# 测试和检查工具缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 构建产物
+build/
+dist/
+*.egg-info/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+weather.py
