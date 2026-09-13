@@ -52,7 +52,7 @@ client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
 user_input = "请分别查询北京和上海今天的天气。"
 
 first_response = client.responses.create(
-    model="deepseek-v4-flash",
+    model="deepseek-v4.1-flash-expires-on-0910",
     reasoning={"effort": "none"},
     instructions="每个城市分别调用一次 get_weather，不要合并城市参数。",
     input=user_input,
@@ -94,7 +94,7 @@ for tool_call in tool_calls:
     print(f"已处理 {arguments.city}：{tool_call.call_id}")
 
 second_response = client.responses.create(
-    model="deepseek-v4-flash",
+    model="deepseek-v4.1-flash-expires-on-0910",
     reasoning={"effort": "none"},
     instructions="根据所有工具结果，用一句中文回答用户。",
     input=input_items,
